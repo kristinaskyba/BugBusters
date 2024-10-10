@@ -11,7 +11,7 @@ public class DecaJavelinThrow {
 	private double C = 1.08;
 	boolean active = true;
 	CalcTrackAndField calc = new CalcTrackAndField();
-	InputResult inputResult = new InputResult();
+	public InputResult inputResult = new InputResult();
 
 	// Calculate the score based on distance and height. Measured in meters.
 	public int calculateResult(double distance) {
