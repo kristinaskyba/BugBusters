@@ -19,8 +19,8 @@ public class HeptLongJump {
 		while (active) {
 
 			try {
-				// Added the correct value
-				if (distance < 210) {
+				// Acceptable values.
+				if (distance < 0) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 				} else if (distance > 400) {

@@ -20,7 +20,7 @@ public class DecaDiscusThrow {
 
 			try {
 				// Acceptable values.
-				if (distance < 0) {
+				if (distance < 4) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 				} else if (distance > 85) {
