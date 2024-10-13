@@ -19,15 +19,21 @@ public class DecaShotPut {
 		while (active) {
 
 			try {
-				// Acceptable values.
-				if (distance < 0) {
+				// Fixed lower value - Oskar
+				if (distance < 1.5) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
 				} else if (distance > 30) {
-
 					System.out.println("Value too high");
 					distance = inputResult.enterResult();
-				} else {
+
+					// Fixed higher value
+					if (distance > 30) {
+						System.out.println("Error: Input must be 30 or less. Setting to maximum allowed value.");
+						distance = 30;
+					}
+					// Don't set active = false here to allow the while loop to continue
+				}else {
 
 					score = calc.calculateField(A, B, C, distance);
 					active = false;
