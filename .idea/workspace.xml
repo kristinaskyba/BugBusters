@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a80d20a-5ef9-4677-880f-74da11d12f68" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca400M.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca400M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaShotPut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptLongJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptLongJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca100M.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca100M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca110MHurdles.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca110MHurdles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca1500M.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca1500M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca400M.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/Deca400M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaDiscusThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaDiscusThrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaHighJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaHighJump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaJavelinThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaJavelinThrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaLongJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaLongJump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaPoleVault.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaPoleVault.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaShotPut.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/decathlon/DecaShotPut.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/excel/ExcelPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/excel/ExcelPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/excel/ExcelReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/excel/ExcelReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/gui/MainGUI$CalculateButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/gui/MainGUI$CalculateButtonListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep100MHurdles.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep100MHurdles.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep200M.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep200M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep800M.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/Hep800M.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptHightJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptHightJump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptJavelinThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptJavelinThrow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptLongJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptLongJump.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptShotPut.class" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/target/classes/heptathlon/HeptShotPut.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/Deca1500MTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaDiscusThrowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaHighJumpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaLongJumpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaPoleVaultTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +55,18 @@
     "JUnit.LongJumpHeptaTest.testExceptionHandling.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "OskarDecaShotPutTest",
+    "git-widget-placeholder": "test01",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/yomom/Downloads/BugBusters-TobiasTestcases"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DecaShotPutTest">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\agoli\Documents\GitHub\BugBusters\Decathlon2024\src" />
+      <recent name="C:\Users\agoli\Documents\GitHub\BugBusters\Decathlon2024\src\test\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in DecathlonHeptathlon">
     <configuration name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gui.MainGUI" />
       <module name="DecathlonHeptathlon" />
@@ -89,6 +76,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Decathlon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Decathlon" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in DecathlonHeptathlon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DecathlonHeptathlon" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,44 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LongJumpHeptaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DecathlonHeptathlon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.LongJumpHeptaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongJumpHeptaTest.testExceptionHandling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DecathlonHeptathlon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.LongJumpHeptaTest" />
-      <option name="METHOD_NAME" value="testExceptionHandling" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in DecathlonHeptathlon" />
+        <item itemvalue="JUnit.All in Decathlon" />
         <item itemvalue="JUnit.DecaShotPutTest" />
         <item itemvalue="JUnit.DecaShotPutTest.testExceptionHandling" />
         <item itemvalue="Application.MainGUI" />
-        <item itemvalue="JUnit.LongJumpHeptaTest.testExceptionHandling" />
-        <item itemvalue="JUnit.LongJumpHeptaTest" />
       </list>
     </recent_temporary>
   </component>
