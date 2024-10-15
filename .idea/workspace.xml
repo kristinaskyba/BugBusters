@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a80d20a-5ef9-4677-880f-74da11d12f68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/Deca1500MTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaDiscusThrowTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaHighJumpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaLongJumpTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaPoleVaultTest.java" afterDir="false" />
+    <list default="true" id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testDeca100m.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testDeca400m.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testHighJumpDeca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testJavelinThrowDeca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decathlon2024/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca100M.java" beforeDir="false" afterPath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca100M.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,79 +26,24 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
-  <component name="ProjectId" id="2nEqn2VuHhpMie1sbvx2tOq062b" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2nFb52rq72EFw7xf4KAVYnr4D8D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MainGUI.executor": "Run",
-    "JUnit.DecaShotPutTest.executor": "Run",
-    "JUnit.DecaShotPutTest.testAboveUpperBoundary.executor": "Run",
-    "JUnit.DecaShotPutTest.testBelowLowerBoundary.executor": "Run",
-    "JUnit.DecaShotPutTest.testExceptionHandling.executor": "Run",
-    "JUnit.DecaShotPutTest.testJustAboveUpperBoundary.executor": "Run",
-    "JUnit.DecaShotPutTest.testJustBelowLowerBoundary.executor": "Run",
-    "JUnit.DecaShotPutTest.testLowerBoundary.executor": "Run",
-    "JUnit.DecaShotPutTest.testValidInput.executor": "Run",
-    "JUnit.LongJumpHeptaTest.executor": "Run",
-    "JUnit.LongJumpHeptaTest.testExceptionHandling.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "test01",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/yomom/Downloads/BugBusters-TobiasTestcases"
+    "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\agoli\Documents\GitHub\BugBusters\Decathlon2024\src" />
-      <recent name="C:\Users\agoli\Documents\GitHub\BugBusters\Decathlon2024\src\test\java" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.All in DecathlonHeptathlon">
-    <configuration name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.MainGUI" />
-      <module name="DecathlonHeptathlon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in Decathlon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Decathlon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in DecathlonHeptathlon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DecathlonHeptathlon" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecaShotPutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="testDeca100m" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DecathlonHeptathlon" />
       <extension name="coverage">
         <pattern>
@@ -105,70 +52,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.DecaShotPutTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.testDeca100m" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DecaShotPutTest.testExceptionHandling" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="DecathlonHeptathlon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.DecaShotPutTest" />
-      <option name="METHOD_NAME" value="testExceptionHandling" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in DecathlonHeptathlon" />
-        <item itemvalue="JUnit.All in Decathlon" />
-        <item itemvalue="JUnit.DecaShotPutTest" />
-        <item itemvalue="JUnit.DecaShotPutTest.testExceptionHandling" />
-        <item itemvalue="Application.MainGUI" />
+        <item itemvalue="JUnit.testDeca100m" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a80d20a-5ef9-4677-880f-74da11d12f68" name="Changes" comment="" />
-      <created>1728548745686</created>
+      <changelist id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="" />
+      <created>1728571584290</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728548745686</updated>
+      <updated>1728571584290</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="OskarDecaShotPutTest" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
