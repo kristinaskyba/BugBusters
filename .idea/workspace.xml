@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="fixed pholders in tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/decathlon/Deca110MHurdlesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/gui/MainGUITest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep800MTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptHightJumpTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptJavelinThrowBVATest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep800M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep800M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test/DecaShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaShotPutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/DecaHighJumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep200MTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/Hep100MHurdlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep100MHurdlesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/HeptJavelinThrowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptJavelinThrowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/HeptShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptShotPutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca100M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca100M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca110MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca110MHurdles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca400M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca400M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/DecaLongJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaLongJump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/DecaShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaShotPut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep100MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep100MHurdles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep200M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep200M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptHightJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptHightJump.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptJavelinThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptJavelinThrow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptShotPut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +88,7 @@
       <recent name="Test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="heptathlon" />
       <recent name="decathlon" />
     </key>
   </component>
@@ -153,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729022830300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed pholders in tests">
+      <option name="closed" value="true" />
+      <created>1729023025740</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729023025740</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

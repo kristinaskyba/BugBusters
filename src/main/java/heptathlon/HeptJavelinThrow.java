@@ -20,10 +20,10 @@ public class HeptJavelinThrow {
 
 			try {
 				// Acceptable values.
-				if (distance < 0) {
+				if (distance < 3.8) {
 					System.out.println("Value too low");
 					distance = inputResult.enterResult();
-				} else if (distance > 100) {
+				} else if (distance > 110) {
 
 					System.out.println("Value too high");
 					distance = inputResult.enterResult();
