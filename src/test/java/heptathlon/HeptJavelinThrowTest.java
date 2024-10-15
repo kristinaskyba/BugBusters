@@ -1,4 +1,4 @@
-package decathlon;
+package heptathlon;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;

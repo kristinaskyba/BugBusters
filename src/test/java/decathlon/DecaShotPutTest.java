@@ -1,18 +1,18 @@
-package Test;
+package decathlon;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import static org.junit.jupiter.api.Assertions.*;
-
-import decathlon.DecaShotPut;
 
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DecaShotPutTest {
 
@@ -58,4 +58,5 @@ public class DecaShotPutTest {
         System.setOut(originalOut);
         System.setIn(originalIn);
     }
+
 }

@@ -4,50 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="Majed initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="fixed pholders in tests">
+      <change afterPath="$PROJECT_DIR$/src/test/java/decathlon/Deca110MHurdlesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/gui/MainGUITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep800MTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptHightJumpTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/DecaShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/DecaShotPutTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/LongJumpHeptaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/LongJumpHeptaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testDeca100m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/testDeca100m.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testDeca400m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/testDeca400m.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testHighJumpDeca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/testHighJumpDeca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/Test/testJavelinThrowDeca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/testJavelinThrowDeca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/common/CalcTrackAndField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/CalcTrackAndField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/common/InputName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/InputName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/common/InputResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/InputResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/common/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/common/SelectDiscipline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/SelectDiscipline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca100M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca100M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca110MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca110MHurdles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca1500M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca1500M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/Deca400M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca400M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaDiscusThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaDiscusThrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaHighJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaHighJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaJavelinThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaJavelinThrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaLongJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaLongJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaPoleVault.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaPoleVault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/decathlon/DecaShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaShotPut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/excel/ExcelPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/excel/ExcelPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/excel/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/excel/ExcelReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/gui/MainGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/MainGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/Hep100MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep100MHurdles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/Hep200M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep200M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/Hep800M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep800M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptHightJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptHightJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptJavelinThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptJavelinThrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptLongJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptLongJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/main/java/heptathlon/HeptShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptShotPut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/Deca1500MTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/Deca1500MTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaDiscusThrowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaDiscusThrowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaHighJumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaHighJumpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaLongJumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaLongJumpTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/DecaPoleVaultTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaPoleVaultTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/Hep100MHurdlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/Hep100MHurdlesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/HeptJavelinThrowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/HeptJavelinThrowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Decathlon2024/src/test/java/decathlon/HeptShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/HeptShotPutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep800M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep800M.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/DecaShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/decathlon/DecaShotPutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/DecaHighJumpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep200MTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/Hep100MHurdlesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/Hep100MHurdlesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/HeptJavelinThrowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptJavelinThrowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/decathlon/HeptShotPutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptShotPutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +70,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/krist/OneDrive/Документы/GitHub/BugBusters/src/test/java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -111,6 +80,14 @@
       <recent name="C:\Users\krist\OneDrive\Документы\GitHub\BugBusters" />
       <recent name="C:\Users\krist\OneDrive\Документы\GitHub\BugBusters\Decathlon2024\src\test\java\decathlon" />
       <recent name="C:\Users\krist\OneDrive\Документы\GitHub\BugBusters\Decathlon2024\src\main\java\Test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="heptathlon" />
+      <recent name="decathlon" />
+      <recent name="Test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="decathlon" />
     </key>
   </component>
   <component name="RunManager">
@@ -160,7 +137,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729019737839</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit with almost all branches">
+      <option name="closed" value="true" />
+      <created>1729020969402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729020969402</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed pholders in tests">
+      <option name="closed" value="true" />
+      <created>1729022830300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729022830300</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +171,8 @@
     <MESSAGE value="Tobias commit" />
     <MESSAGE value="Majed commit" />
     <MESSAGE value="Majed initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Majed initial commit" />
+    <MESSAGE value="commit with almost all branches" />
+    <MESSAGE value="fixed pholders in tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed pholders in tests" />
   </component>
 </project>

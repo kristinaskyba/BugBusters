@@ -1,4 +1,4 @@
-package decathlon;
+package heptathlon;
 
 import common.InputResult;
 import org.junit.jupiter.api.BeforeEach;
@@ -6,39 +6,41 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class DecaHighJumpTest {
-    DecaHighJump event = new DecaHighJump();
+public class HeptHightJumpTest {
+    HeptHightJump event = new HeptHightJump();
     @BeforeEach
     void setUp() {
-        event = new DecaHighJump();
+        event = new HeptHightJump();
     }
     @Test
     public void testCalculateScore() {
-        double inputResult = 201; // Input in centimeters
-        double expectedScore = 813;
+        double inputResult = 255; // Input in meters
+        double expectedScore = 2023; //wrong calculation if input is 254, should be result 20 according to excel
+        // because private double A = 0.13454 instead of A = 0.14354
 
         double actual = event.calculateResult(inputResult);
         assertEquals(expectedScore, actual);
     }
     @Test
     void testCalculateResult_withValidDistance() {
-        // Test with a valid time that falls within the acceptable range (e.g., 225 centimeters)
-        int expectedScore = event.calc.calculateField(0.8465, 75, 1.42, 225.0); // Calculation based on method formula
-        int actual = event.calculateResult(225.0);
+
+        // Test with a valid time that falls within the acceptable range (e.g., 250 meters)
+        int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 254); // Calculation based on method formula
+        int actual = event.calculateResult(254);
         assertEquals(expectedScore, actual);
     }
     @Test
     void testCalculateResult_withExactLowBoundary() {
-        // Test with a valid time on the boundary (exactly 75 centimeters, acceptable)
-        int expectedScore = event.calc.calculateField(0.8465, 75, 1.42, 75.0);
-        int result = event.calculateResult(75.0);
+        // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
+        int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 75);
+        int result = event.calculateResult(75);
         assertEquals(expectedScore, result); ///wrong calculation
     }
     @Test
     void testCalculateResult_withExactHighBoundary() {
-        // Test with a valid time on the boundary (exactly 300 centimeters, acceptable)
-        int expectedScore = event.calc.calculateField(0.8465, 75, 1.42, 300.0);
-        int result = event.calculateResult(300.0);
+        // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
+        int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 300);
+        int result = event.calculateResult(300);
         assertEquals(expectedScore, result); ///wrong calculation
     }
     @Test
@@ -49,12 +51,12 @@ public class DecaHighJumpTest {
             @Override
             public double enterResult() {
                 // Return a valid value when asked for new input to stop never ending prompt
-                return 75.0;
+                return 254.0;
             }
         };
-        int expectedScore = event.calc.calculateField(0.8465, 75, 1.42, 75.0); // The expected value when the final
+        int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 254); // The expected value when the final
         // valid time is used
-        int actual = event.calculateResult(74.9); // Initial invalid input triggers new input
+        int actual = event.calculateResult(69); // Initial invalid input triggers new input
         assertEquals(expectedScore, actual);
     }
     @Test
@@ -65,13 +67,12 @@ public class DecaHighJumpTest {
             @Override
             public double enterResult() {
                 // Return a valid value when asked for new input to stop never ending prompt
-                return 300.0;
+                return 254.0;
             }
         };
-        int expectedScore = event.calc.calculateField(0.8465, 75, 1.42, 300.0); // The expected value when the final
+        int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 254); // The expected value when the final
         // valid meters are used
-        int actual = event.calculateResult(300.1); // Initial invalid input triggers new input
+        int actual = event.calculateResult(301); // Initial invalid input triggers new input
         assertEquals(expectedScore, actual);
     }
-
 }
