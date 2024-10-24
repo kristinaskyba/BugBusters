@@ -18,7 +18,7 @@ public class Deca100M {
 		if (runningTime < 5) {
 			System.out.println("Value too low");
 			throw new InvalidResultException("Value too low");
-		} else if (runningTime > 20) {
+		} else if (runningTime > 17.8) {
 			System.out.println("Value too high");
 			throw new InvalidResultException("Value too high");
 		}
