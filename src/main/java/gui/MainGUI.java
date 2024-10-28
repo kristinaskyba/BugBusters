@@ -26,6 +26,8 @@ public class MainGUI {
     private JTextArea outputArea;
     private JTable competitorTable;
     private DefaultTableModel tableModel;
+
+    private JRadioButton disciplineSelector;
     private ArrayList<Competitor> competitors = new ArrayList<>();
     public static void main(String[] args) {
         new MainGUI().createAndShowGUI();
@@ -179,14 +181,33 @@ public class MainGUI {
                         break;
                 }
 
-                Competitor competitor = new Competitor(name);
+
                 if (competitors.size() > 40) {
                     JOptionPane.showMessageDialog(null, "Maximum number of competitors reached (40).", "Error", JOptionPane.ERROR_MESSAGE);
                 } else {
-                    competitors.add(competitor);
+                    var maybeExistingCompetitor = competitors.stream().filter(c -> c.getName().trim().toLowerCase().equals(name.toLowerCase().trim())).findAny();
+                    var competitor = maybeExistingCompetitor.orElse( new Competitor(name));
                     competitor.setScore(discipline, score);
-                }
 
+                    if(maybeExistingCompetitor.isEmpty()){
+                        competitors.add(competitor);
+                        tableModel.addRow(competitor.getRowData());
+
+                    }else{
+                        int competitorRowIndex = 0;
+                        for(Competitor c:competitors){
+                            if(c.getName().trim().toLowerCase().equals(name.toLowerCase().trim())) {
+                                break;
+                            }
+                            competitorRowIndex++;
+                        }
+                        var competitorRowData = competitors.get(competitorRowIndex).getRowData();
+                        for(int columnIndex = 0; columnIndex < competitorRowData.length; columnIndex++){
+                            tableModel.setValueAt(competitorRowData[columnIndex], competitorRowIndex, columnIndex);
+                        }
+                    }
+                    tableModel.fireTableDataChanged();
+                }
 
 
 
@@ -214,23 +235,32 @@ public class MainGUI {
     }
 
     private void exportToExcel() throws IOException {
-        String[][] data = new String[competitors.size()][];
-        int i = 0;
-        for (Competitor competitor : competitors) {
-            Object[] rowData = competitor.getRowData(); // Get the competitor's row data
+        java.util.List<String> names = java.util.List.of(ExcelPrinter.DECA_SHEET_NAME, ExcelPrinter.HEPA_SHEET_NAME);
+        for(String name : names){
+            String[][] data = new String[competitors.size()][];
+            int i = 0;
+            for (Competitor competitor : competitors) {
+                Object[] rowData;
+                if(ExcelPrinter.DECA_SHEET_NAME.equals(name)){
+                    rowData = competitor.getDecathlonData();
+                }else{
+                    rowData = competitor.getHepathlonData();
+                }
 
-            // Ensure the array size matches the number of columns in rowData
-            data[i] = new String[rowData.length];
+                // Ensure the array size matches the number of columns in rowData
+                data[i] = new String[rowData.length];
 
-            // Safely copy rowData to data array
-            for (int j = 0; j < rowData.length; j++) {
-                data[i][j] = (rowData[j] != null) ? rowData[j].toString() : "";  // Handle null values
+                // Safely copy rowData to data array
+                for (int j = 0; j < rowData.length; j++) {
+                    data[i][j] = (rowData[j] != null) ? rowData[j].toString() : "";  // Handle null values
+                }
+                i++;
             }
-            i++;
+
+            ExcelPrinter printer = new ExcelPrinter("TrackAndFieldResults");
+            printer.add(data, name);
+            printer.write("target/"+name+"_");
         }
 
-        ExcelPrinter printer = new ExcelPrinter("TrackAndFieldResults");
-        printer.add(data, "Results");
-        printer.write();
     }
 }

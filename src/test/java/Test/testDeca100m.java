@@ -32,7 +32,7 @@ public class testDeca100m {
 
     }
     @Test
-    public void testCalculateScore(){
+    public void testCalculateScore() throws Exception{
         //Test to see if score is calculated correct
         double inputResult=5;
         //expected value based on excel
@@ -45,7 +45,7 @@ public class testDeca100m {
 
 
     @Test
-    public void testMinimumBoundary() {
+    public void testMinimumBoundary() throws Exception{
         // simulating that we are entering a acceptable value withing the limits
 
         when(mockInputResult.enterResult()).thenReturn(5.0);
@@ -56,7 +56,7 @@ public class testDeca100m {
     }
 
     @Test
-    public void testBoundaryMax() {
+    public void testBoundaryMax()  throws Exception{
         // simulating that we are entering a acceptable value withing the limits
         when(mockInputResult.enterResult()).thenReturn(11.0);
 
