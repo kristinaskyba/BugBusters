@@ -3,7 +3,6 @@ package Test;
 
 import common.InputResult;
 import decathlon.Deca100M;
-import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,25 +32,20 @@ public class testDeca100m {
 
     }
     @Test
-    public void testCalculateScore(){
+    public void testCalculateScore() throws Exception{
         //Test to see if score is calculated correct
         double inputResult=5;
         //expected value based on excel
         double expectedScore=2640;
 
-        double actual= 0;
-        try {
-            actual = event.calculateResult(inputResult);
-        } catch (InvalidResultException e) {
-            throw new RuntimeException(e);
-        }
+        double actual= event.calculateResult(inputResult);
 
         assertEquals(expectedScore,actual);
     }
 
 
     @Test
-    public void testMinimumBoundary() throws InvalidResultException {
+    public void testMinimumBoundary() throws Exception{
         // simulating that we are entering a acceptable value withing the limits
 
         when(mockInputResult.enterResult()).thenReturn(5.0);
@@ -62,7 +56,7 @@ public class testDeca100m {
     }
 
     @Test
-    public void testBoundaryMax() throws InvalidResultException {
+    public void testBoundaryMax()  throws Exception{
         // simulating that we are entering a acceptable value withing the limits
         when(mockInputResult.enterResult()).thenReturn(11.0);
 

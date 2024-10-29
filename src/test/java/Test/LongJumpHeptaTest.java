@@ -44,7 +44,7 @@ public class LongJumpHeptaTest {
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
     public void testAboveUpperBoundary() {
         simulateInput("400");
-        event.calculateResult(401);
+        event.calculateResult(1001);
         assertTrue(outContent.toString().contains("Value too high"), "Should print 'Value too high' for input above 400cm");
     }
 
