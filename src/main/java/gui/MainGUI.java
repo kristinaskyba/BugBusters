@@ -182,7 +182,7 @@ public class MainGUI {
                 }
 
 
-                if (competitors.size() > 40) {
+                if (competitors.size() >= 40) {
                     JOptionPane.showMessageDialog(null, "Maximum number of competitors reached (40).", "Error", JOptionPane.ERROR_MESSAGE);
                 } else {
                     var maybeExistingCompetitor = competitors.stream().filter(c -> c.getName().trim().toLowerCase().equals(name.toLowerCase().trim())).findAny();
