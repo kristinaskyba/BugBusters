@@ -5,18 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a61fb8f-b321-40d8-ab5d-52d7d6cbaf4b" name="Changes" comment="fixed pholders in tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/heptathlon/HeptJavelinThrowBVATest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca100M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca100M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca110MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca110MHurdles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/Deca400M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/Deca400M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/DecaLongJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaLongJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/decathlon/DecaShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decathlon/DecaShotPut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep100MHurdles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep100MHurdles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/Hep200M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/Hep200M.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptHightJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptHightJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptJavelinThrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptJavelinThrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/heptathlon/HeptShotPut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/heptathlon/HeptShotPut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/testDeca100m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/testDeca100m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/SelectDiscipline.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/SelectDiscipline.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/Deca100M.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/Deca100M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/Deca110MHurdles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/Deca110MHurdles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/Deca1500M.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/Deca1500M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/Deca400M.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/Deca400M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaDiscusThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaDiscusThrow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaHighJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaHighJump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaJavelinThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaJavelinThrow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaLongJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaLongJump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaPoleVault.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaPoleVault.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/decathlon/DecaShotPut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/decathlon/DecaShotPut.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/excel/ExcelPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/excel/ExcelPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/excel/ExcelReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/excel/ExcelReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/MainGUI$CalculateButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/MainGUI$CalculateButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gui/MainGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gui/MainGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/Hep100MHurdles.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/Hep100MHurdles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/Hep200M.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/Hep200M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/Hep800M.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/Hep800M.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/HeptHightJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/HeptHightJump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/HeptJavelinThrow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/HeptJavelinThrow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/HeptLongJump.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/HeptLongJump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/heptathlon/HeptShotPut.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/heptathlon/HeptShotPut.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +51,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kristinaskyba"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kristinaskyba&quot;
   }
-}]]></component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="master" />
-      </list>
-    </option>
-  </component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -67,14 +73,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_directory_selection": "C:/Users/krist/OneDrive/Документы/GitHub/BugBusters/src/test/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/krist/OneDrive/Документы/GitHub/BugBusters/src/test/java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\krist\OneDrive\Документы\GitHub\BugBusters\src" />
@@ -92,8 +98,36 @@
       <recent name="decathlon" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="testDeca100m" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MainGUI">
+    <configuration name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gui.MainGUI" />
+      <module name="DecathlonHeptathlon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Deca110MHurdlesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DecathlonHeptathlon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="decathlon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="decathlon" />
+      <option name="MAIN_CLASS_NAME" value="decathlon.Deca110MHurdlesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDeca100m.testBoundaryMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DecathlonHeptathlon" />
       <extension name="coverage">
         <pattern>
@@ -103,14 +137,51 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.testDeca100m" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testBoundaryMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDeca100m.testCalculateScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DecathlonHeptathlon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.testDeca100m" />
+      <option name="METHOD_NAME" value="testCalculateScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testDeca100m.testMinimumBoundary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DecathlonHeptathlon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.testDeca100m" />
+      <option name="METHOD_NAME" value="testMinimumBoundary" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testDeca100m" />
+        <item itemvalue="Application.MainGUI" />
+        <item itemvalue="JUnit.Deca110MHurdlesTest" />
+        <item itemvalue="JUnit.testDeca100m.testBoundaryMax" />
+        <item itemvalue="JUnit.testDeca100m.testMinimumBoundary" />
+        <item itemvalue="JUnit.testDeca100m.testCalculateScore" />
       </list>
     </recent_temporary>
   </component>
