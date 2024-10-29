@@ -28,13 +28,13 @@ public class DecaShotPutTest {
     }
 
     @Test
-    public void testValidInput() {
+    public void testValidInput() throws InvalidResultException {
         assertEquals(790, event.calculateResult(15.0), "Score should be 790 for 15.0m throw");
     }
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testBelowLowerBoundary() {
+    public void testBelowLowerBoundary() throws InvalidResultException {
         simulateInput("15.0");
         event.calculateResult(1.4);
         assertTrue(outContent.toString().contains("Value too low"), "Should print 'Value too low' for input below 1.5");
@@ -42,7 +42,7 @@ public class DecaShotPutTest {
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testAboveUpperBoundary() {
+    public void testAboveUpperBoundary() throws InvalidResultException {
         simulateInput("15.0");
         event.calculateResult(30.1);
         assertTrue(outContent.toString().contains("Value too high"), "Should print 'Value too high' for input above 30");

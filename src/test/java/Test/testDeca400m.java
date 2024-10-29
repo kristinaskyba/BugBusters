@@ -1,5 +1,6 @@
 package Test;
 
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.Test;
 import common.InputResult;
 import decathlon.Deca400M;
@@ -17,7 +18,7 @@ public class testDeca400m {
 
 
     @Test
-    public void testCalculateScore(){
+    public void testCalculateScore() throws InvalidResultException {
         //Test för att räkna ut lägsta möljiga score
         double inputResult=20;
         //rätt värde på expected enligt excel dokument m.uträkning

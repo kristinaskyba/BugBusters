@@ -1,5 +1,6 @@
 package Test;
 
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -28,13 +29,13 @@ public class LongJumpHeptaTest {
     }
 
     @Test
-    public void testValidInput() {
+    public void testValidInput() throws InvalidResultException {
         assertEquals(73, event.calculateResult(279), "Score should be 73 for 279cm jump");
     }
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testBelowLowerBoundary() {
+    public void testBelowLowerBoundary() throws InvalidResultException {
         simulateInput("210");
         event.calculateResult(209);
         assertTrue(outContent.toString().contains("Value too low"), "Should print 'Value too low' for input below 210cm");
@@ -42,7 +43,7 @@ public class LongJumpHeptaTest {
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testAboveUpperBoundary() {
+    public void testAboveUpperBoundary() throws InvalidResultException {
         simulateInput("400");
         event.calculateResult(1001);
         assertTrue(outContent.toString().contains("Value too high"), "Should print 'Value too high' for input above 400cm");

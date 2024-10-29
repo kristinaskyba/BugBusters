@@ -1,6 +1,8 @@
 package heptathlon;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import heptathlon.HeptShotPut;
@@ -15,7 +17,7 @@ public class HeptShotPutTest {
     }
 
     @Test
-    public void testValidShotPutDistance() {
+    public void testValidShotPutDistance() throws InvalidResultException {
         // Testar ett giltigt värde för kulstötning
         double distance = 15.0;  // Exempel på ett rimligt värde för kulstötning i meter
         int expectedScore = 861;  // Här anger jag det korrekta resultatet för 15.0 meter baserat på min beräkningsformel

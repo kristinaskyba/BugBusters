@@ -1,6 +1,7 @@
 package heptathlon;
 
 import common.InputResult;
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -13,7 +14,7 @@ public class HeptHightJumpTest {
         event = new HeptHightJump();
     }
     @Test
-    public void testCalculateScore() {
+    public void testCalculateScore() throws InvalidResultException {
         double inputResult = 255; // Input in meters
         double expectedScore = 2023; //wrong calculation if input is 254, should be result 20 according to excel
         // because private double A = 0.13454 instead of A = 0.14354
@@ -22,7 +23,7 @@ public class HeptHightJumpTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withValidDistance() {
+    void testCalculateResult_withValidDistance() throws InvalidResultException {
 
         // Test with a valid time that falls within the acceptable range (e.g., 250 meters)
         int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 254); // Calculation based on method formula
@@ -30,21 +31,21 @@ public class HeptHightJumpTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withExactLowBoundary() {
+    void testCalculateResult_withExactLowBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
         int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 75);
         int result = event.calculateResult(75);
         assertEquals(expectedScore, result); ///wrong calculation
     }
     @Test
-    void testCalculateResult_withExactHighBoundary() {
+    void testCalculateResult_withExactHighBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
         int expectedScore = event.calc.calculateField(1.84523, 75, 1.348, 300);
         int result = event.calculateResult(300);
         assertEquals(expectedScore, result); ///wrong calculation
     }
     @Test
-    void testCalculateResult_withLowDistance() {
+    void testCalculateResult_withLowDistance() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
         event.inputResult = new InputResult() {
@@ -60,7 +61,7 @@ public class HeptHightJumpTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withHighDistance() {
+    void testCalculateResult_withHighDistance() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
         event.inputResult = new InputResult() {

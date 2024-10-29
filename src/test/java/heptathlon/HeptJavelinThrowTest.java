@@ -1,6 +1,8 @@
 package heptathlon;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import heptathlon.HeptJavelinThrow;
@@ -15,7 +17,7 @@ public class HeptJavelinThrowTest {
     }
 
     @Test
-    public void testValidJavelinThrowDistance() {
+    public void testValidJavelinThrowDistance() throws InvalidResultException {
         // Testar ett giltigt värde för spjutkastning
         double distance = 60.0;  // Exempel på ett rimligt värde för spjutkastning i meter
         int expectedScore = 1055;  // Korrekt resultat för 60.0 meter baserat på beräkningsformeln
