@@ -2,6 +2,7 @@ package heptathlon;
 
 import common.InputResult;
 import decathlon.Deca100M;
+import decathlon.InvalidResultException;
 import heptathlon.Hep800M;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,7 @@ public class Hep800MTest {
         event = new Hep800M();
     }
     @Test
-    public void testCalculateScore() {
+    public void testCalculateScore() throws InvalidResultException {
         double inputTime = 210; // Input in seconds
         double expectedScore = 137;
 
@@ -24,7 +25,7 @@ public class Hep800MTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withValidTime() {
+    void testCalculateResult_withValidTime() throws InvalidResultException {
         // Test with a valid time that falls within the acceptable range
         int expectedScore = event.calc.calculateTrack(0.11193, 254, 1.88, 220); // Calculation based on method
         // formula
@@ -32,21 +33,21 @@ public class Hep800MTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withExactLowBoundary() {
+    void testCalculateResult_withExactLowBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
         int expectedScore = event.calc.calculateTrack(0.11193, 254, 1.88, 70); // Calculation based on method
         int result = event.calculateResult(70);
         assertEquals(expectedScore, result);
     }
     @Test
-    void testCalculateResult_withExactHighBoundary() {
+    void testCalculateResult_withExactHighBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 5 seconds, acceptable)
         int expectedScore = event.calc.calculateTrack(0.11193, 254, 1.88, 254); // Calculation based on method
         int result = event.calculateResult(254);
         assertEquals(expectedScore, result);
     }
     @Test
-    void testCalculateResult_withLowTime() {
+    void testCalculateResult_withLowTime() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
         event.inputResult = new InputResult() {
@@ -62,7 +63,7 @@ public class Hep800MTest {
         assertEquals(expectedScore, actual);
     }
     @Test
-    void testCalculateResult_withHighTime() {
+    void testCalculateResult_withHighTime() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
         event.inputResult = new InputResult() {

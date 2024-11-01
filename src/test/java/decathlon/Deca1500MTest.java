@@ -15,7 +15,7 @@ public class Deca1500MTest {
     }
 
     @Test
-    public void testCalculateScore() {
+    public void testCalculateScore() throws InvalidResultException {
         double inputTime = 151.0; // Input in seconds
         double expectedScore = 1709;
 
@@ -24,7 +24,7 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withValidTime() {
+    void testCalculateResult_withValidTime() throws InvalidResultException {
         // Test with a valid time that falls within the acceptable range (e.g., 151 seconds)
         int expectedScore = event.calc.calculateTrack(0.03768, 480, 1.85, 151.0); // Calculation based on method formula
         int actual = event.calculateResult(151.0);
@@ -32,7 +32,7 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withExactLowBoundary() {
+    void testCalculateResult_withExactLowBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 150 seconds, acceptable)
         int expectedScore = event.calc.calculateTrack(0.03768, 480, 1.85, 150.0);
         int result = event.calculateResult(150.0);
@@ -40,7 +40,7 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withExactHighBoundary() {
+    void testCalculateResult_withExactHighBoundary() throws InvalidResultException {
         // Test with a valid time on the boundary (exactly 480 seconds, acceptable)
         int expectedScore = event.calc.calculateTrack(0.03768, 480, 1.85, 480.0);
         int result = event.calculateResult(480.0);
@@ -48,10 +48,10 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withLowTime() {
+    void testCalculateResult_withLowTime() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
-        event.inputResult = new InputResult() {
+        Deca1500M.inputResult = new InputResult() {
             @Override
             public double enterResult() {
                 // Return a valid value when asked for new input to stop never ending prompt
@@ -65,10 +65,10 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withHighTime() {
+    void testCalculateResult_withHighTime() throws InvalidResultException {
         // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
         // InputResult
-        event.inputResult = new InputResult() {
+        Deca1500M.inputResult = new InputResult() {
             @Override
             public double enterResult() {
                 // Return a valid value when asked for new input to stop never ending prompt

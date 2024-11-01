@@ -2,6 +2,7 @@ package Test;
 
 import common.InputResult;
 import decathlon.DecaJavelinThrow;
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +27,7 @@ public class testJavelinThrowDeca {
 
 
     @Test
-    public void testValidScore() {
+    public void testValidScore() throws InvalidResultException {
         //test of calculation beeing correct according to excel
         double inputResult = 7;
 
@@ -39,7 +40,7 @@ public class testJavelinThrowDeca {
 
 
     @Test
-    public void testBoundaryTooLow() {
+    public void testBoundaryTooLow() throws InvalidResultException {
 
         when(mockInputResult.enterResult()).thenReturn(7.0); //simulate user input
         double distance = 6.99;  //value under acceptable limit
@@ -52,7 +53,7 @@ public class testJavelinThrowDeca {
     }
 
     @Test
-    public void testLowestValue() {
+    public void testLowestValue() throws InvalidResultException {
 
         double distance = 7.0;  //lowest acceptable value
         int expectedScore = 0;  //expected result based on excel
@@ -67,7 +68,7 @@ public class testJavelinThrowDeca {
 
 
     @Test
-    public void testUpperBoundaryTooHigh() {
+    public void testUpperBoundaryTooHigh() throws InvalidResultException {
 
         when(mockInputResult.enterResult()).thenReturn(110.0); //highest acceptable value
 
@@ -84,7 +85,7 @@ public class testJavelinThrowDeca {
 
 
     @Test
-    public void testUpperBoundaryValid() {
+    public void testUpperBoundaryValid() throws InvalidResultException {
 
         double distance = 110.0;  // highest acceptable value
         int expectedScore = 1513;  // expected result based on excel

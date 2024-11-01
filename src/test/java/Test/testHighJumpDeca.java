@@ -2,6 +2,7 @@ package Test;
 import common.InputResult;
 import decathlon.Deca100M;
 import decathlon.DecaHighJump;
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +17,7 @@ public class testHighJumpDeca {
     //Test för att räkna ut
 
     @Test
-    public void testCalculatevalidData(){
+    public void testCalculatevalidData() throws InvalidResultException {
 
         double inputResult=201;
 

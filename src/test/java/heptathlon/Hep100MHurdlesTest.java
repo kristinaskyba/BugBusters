@@ -1,6 +1,8 @@
 package heptathlon;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+import decathlon.InvalidResultException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import heptathlon.Hep100MHurdles;
@@ -15,7 +17,7 @@ public class Hep100MHurdlesTest {
     }
 
     @Test
-    public void testValidRunningTime() {
+    public void testValidRunningTime() throws InvalidResultException {
         // Testar en giltig tid för 100 meter häck
         double runningTime = 15;  // Exempel på ett giltigt värde för 100 meter häck
         int expectedScore = 842;   // Här anger jag det korrekta resultatet för 15 sekunder baserat på formeln
