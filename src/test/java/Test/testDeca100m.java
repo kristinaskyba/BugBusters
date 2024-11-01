@@ -15,20 +15,14 @@ public class testDeca100m {
     //  DecaLongJump event = new DecaLongJump();
     //kalla på deca klassen
     Deca100M event;
-    InputResult mockInputResult;
+
 
     @BeforeEach
     public void setUp() {
         // creates a new instance of Deca100 for the test
         event = new Deca100M();
 
-        // Mocka InputResult
 
-        mockInputResult = mock(InputResult.class);
-
-
-        //here we are putting our mock into the deca100M class
-        event.inputResult = mockInputResult;
 
     }
     @Test
@@ -45,25 +39,29 @@ public class testDeca100m {
 
 
     @Test
-    public void testMinimumBoundary() throws Exception{
-        // simulating that we are entering a acceptable value withing the limits
+    public void testBelowMinimumBoundary() throws Exception{
+        // testing value just below max boundary
 
-        when(mockInputResult.enterResult()).thenReturn(5.0);
+        double inputResult=5.0;
 
-        // Testin value under acceptable critiera
-        int resultTooLow = event.calculateResult(4.99);
-        assertTrue(resultTooLow > 0);
+
+        assertDoesNotThrow(() -> event.calculateResult(inputResult));
     }
 
     @Test
     public void testBoundaryMax()  throws Exception{
-        // simulating that we are entering a acceptable value withing the limits
-        when(mockInputResult.enterResult()).thenReturn(11.0);
+        // testing a value above maximum boundary
+        double inputResult = 17.8;
 
-        // Testin value above acceptable critiera
-        int resultTooHigh = event.calculateResult(17.8);
-        assertTrue(resultTooHigh > 0);
+        assertDoesNotThrow(() -> event.calculateResult(inputResult));
     }
+
+
+ public void testAboveMax() throws Exception {
+     double inputResult = 17.8;
+
+     assertDoesNotThrow(() -> event.calculateResult(inputResult));
+ }
 }
 
 

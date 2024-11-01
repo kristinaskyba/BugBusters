@@ -13,17 +13,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class testJavelinThrowDeca {
 
-    private InputResult mockInputResult;
-    DecaJavelinThrow DecaJavelinThrow = new DecaJavelinThrow();
+
+    private DecaJavelinThrow event;
 
     @BeforeEach
     public void setUp() {
-        mockInputResult = mock(InputResult.class);
-        DecaJavelinThrow.inputResult=mockInputResult;
+
+        event = new DecaJavelinThrow();
     }
-
-
-    DecaJavelinThrow event = new DecaJavelinThrow();
 
 
     @Test
@@ -42,14 +39,10 @@ public class testJavelinThrowDeca {
     @Test
     public void testBoundaryTooLow() throws InvalidResultException {
 
-        when(mockInputResult.enterResult()).thenReturn(7.0); //simulate user input
+
         double distance = 6.99;  //value under acceptable limit
 
-
-        int score = DecaJavelinThrow.calculateResult(distance);
-
-
-        verify(mockInputResult).enterResult();
+        assertThrows(InvalidResultException.class, () -> event.calculateResult(distance));
     }
 
     @Test
@@ -59,29 +52,21 @@ public class testJavelinThrowDeca {
         int expectedScore = 0;  //expected result based on excel
 
 
-        int score = DecaJavelinThrow.calculateResult(distance);
+        int score = event.calculateResult(distance);
 
 
         assertEquals(expectedScore, score);
     }
 
 
-
     @Test
     public void testUpperBoundaryTooHigh() throws InvalidResultException {
 
-        when(mockInputResult.enterResult()).thenReturn(110.0); //highest acceptable value
 
         double distance = 110.01;
 
-
-        int score = DecaJavelinThrow.calculateResult(distance);
-
-
-        verify(mockInputResult).enterResult();
+        assertThrows(InvalidResultException.class, () -> event.calculateResult(distance));
     }
-
-
 
 
     @Test
@@ -91,14 +76,11 @@ public class testJavelinThrowDeca {
         int expectedScore = 1513;  // expected result based on excel
 
 
-        int score = DecaJavelinThrow.calculateResult(distance);
+        int score = event.calculateResult(distance);
 
 
         assertEquals(expectedScore, score, "The score should be correctly calculated for the upper boundary.");
     }
-
-
-
 
 
 }
