@@ -2,6 +2,7 @@ package heptathlon;
 
 import common.InputResult;
 import decathlon.InvalidResultException;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -45,35 +46,21 @@ public class HeptJavelinThrowBVATest {
         assertEquals(expectedScore, result); ///wrong calculation
     }
     @Test
-    void testCalculateResult_withLowDistance() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        event.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 50;
-            }
-        };
-        int expectedScore = event.calc.calculateField(15.9803, 3.8, 1.04, 50); // The expected value when the final
-        // valid time is used
-        int actual = event.calculateResult(3.7); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withLowDistance() {
+        try {
+            event.calculateResult(3.7);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException e) {
+            // Exception was thrown as expected, so the test will pass.
+        }
     }
     @Test
-    void testCalculateResult_withHighDistance() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        event.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 50;
-            }
-        };
-        int expectedScore = event.calc.calculateField(15.9803, 3.8, 1.04, 50);// The expected value when the final
-        // valid meters are used
-        int actual = event.calculateResult(110.1); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withHighDistance() {
+        try {
+            event.calculateResult(111);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException e) {
+            // Exception was thrown as expected, so the test will pass.
+        }
     }
 }

@@ -1,6 +1,7 @@
 package decathlon;
 
 import common.InputResult;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -48,37 +49,22 @@ public class Deca1500MTest {
     }
 
     @Test
-    void testCalculateResult_withLowTime() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        Deca1500M.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 150.0;
-            }
-        };
-        int expectedScore = event.calc.calculateTrack(0.03768, 480, 1.85, 150.0); // The expected value when the final
-        // valid time is used
-        int actual = event.calculateResult(148.0); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withLowTime() {
+        try {
+            event.calculateResult(149);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException e) {
+            // Exception was thrown as expected, so the test will pass.
+        }
     }
 
     @Test
-    void testCalculateResult_withHighTime() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        Deca1500M.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 480.0;
-            }
-        };
-        int expectedScore = event.calc.calculateTrack(0.03768, 480, 1.85, 480.0); // The expected value when the final
-        // valid time is used
-        int actual = event.calculateResult(480.1); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withHighTime() {
+        try {
+            event.calculateResult(481);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException ignored) {
+        }
 
 }
 }
