@@ -4,6 +4,7 @@ import common.InputResult;
 import decathlon.Deca100M;
 import decathlon.InvalidResultException;
 import heptathlon.Hep800M;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -47,36 +48,22 @@ public class Hep800MTest {
         assertEquals(expectedScore, result);
     }
     @Test
-    void testCalculateResult_withLowTime() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        event.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 220;
-            }
-        };
-        int expectedScore = event.calc.calculateTrack(0.11193, 254, 1.88, 220); // Calculation based on method
-        // valid time is used
-        int actual = event.calculateResult(69); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withLowTime() {
+        try {
+            event.calculateResult(69);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException e) {
+            // Exception was thrown as expected, so the test will pass.
+        }
     }
     @Test
-    void testCalculateResult_withHighTime() throws InvalidResultException {
-        // Since I couldn't simulate users input, and it is prompting valid time with if-else, I did it manually via
-        // InputResult
-        event.inputResult = new InputResult() {
-            @Override
-            public double enterResult() {
-                // Return a valid value when asked for new input to stop never ending prompt
-                return 220;
-            }
-        };
-        int expectedScore = event.calc.calculateTrack(0.11193, 254, 1.88, 220); // Calculation based on method
-        // valid time is used
-        int actual = event.calculateResult(255); // Initial invalid input triggers new input
-        assertEquals(expectedScore, actual);
+    void testCalculateResult_withHighTime() {
+        try {
+            event.calculateResult(255);
+            Assertions.fail("Expected InvalidResultException was not thrown.");
+        } catch (InvalidResultException e) {
+            // Exception was thrown as expected, so the test will pass.
+        }
     }
 }
 
