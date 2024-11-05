@@ -6,6 +6,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import heptathlon.HeptLongJump;
 
@@ -14,6 +15,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.concurrent.TimeUnit;
+
 
 public class LongJumpHeptaTest {
 
@@ -35,23 +37,24 @@ public class LongJumpHeptaTest {
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testBelowLowerBoundary() throws InvalidResultException {
-        simulateInput("210");
-        event.calculateResult(209);
-        assertTrue(outContent.toString().contains("Value too low"), "Should print 'Value too low' for input below 210cm");
+    public void testBelowLowerBoundary() {
+        try {
+            event.calculateResult(209);  // Below 210cm threshold from HeptLongJump class
+            fail("Should throw InvalidResultException");
+        } catch (InvalidResultException e) {
+            assertEquals("Value too low", e.getMessage());
+        }
     }
 
     @Test
     @Timeout(value = 1000, unit = TimeUnit.MILLISECONDS)
-    public void testAboveUpperBoundary() throws InvalidResultException {
-        simulateInput("400");
-        event.calculateResult(1001);
-        assertTrue(outContent.toString().contains("Value too high"), "Should print 'Value too high' for input above 400cm");
-    }
-
-    private void simulateInput(String input) {
-        ByteArrayInputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
+    public void testAboveUpperBoundary() {
+        try {
+            event.calculateResult(1001);  // Above 1000cm threshold from HeptLongJump class
+            fail("Should throw InvalidResultException");
+        } catch (InvalidResultException e) {
+            assertEquals("Value too high", e.getMessage());
+        }
     }
 
     @AfterEach
